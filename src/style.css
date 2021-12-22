@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: cursive;
+    /* background-image: radial-gradient(yellow, green); */
+}
+
+.container{
+    
+    width: 95%;
+    margin: auto;
+}
+
+.title{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 25px 0;
+}
+
+.title h2{
+    font-size: 2rem;
+}
+
+.user-input{
+    
+    width: 350px;
+    text-align: center;
+}
+
+.user-input input{
+    width: 80%;
+    outline: none;
+    padding: 8px;
+}
+
+.user-input button{
+    cursor: pointer;
+    padding: 8px;
+    width: fit-content;
+    outline: none;
+    background-color: lightgray;
+    /* border: 1px solid black; */
+}
+
+.toDoItems{
+    width: 500px;
+    margin: auto;
+}
+
+.item{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    border: 2px;
+    padding: 16px;
+    color: rgb(104, 26, 26);
+    margin-top: 10px;
+    font-size: 1 rem;
+}
+
+.item i{
+    margin: 0 5px;
+}
+
+@media(max-width: 770px){
+    .title{
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .title h2{
+        margin: 30px 0;
+    }
+    
+    .user-input{
+        width: 100%;
+    }
+
+    .toDoItems{
+        width: 100%;
+    }
+}
+
+@media(max-width:480px){
+    .user-input{
+        width: 74%;
+    }
+}
+
+
+@media(max-width:320px){
+    .user-input{
+        width: 60%;
+    }
+}
+
+
+
+
+
